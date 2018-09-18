@@ -77,10 +77,71 @@ nav {
     display: flex;
     justify-content: center;
     height: 64px;
-    background-color: blue;
+    margin-top: -10px;
+    /* background-color: blue; */
 }
 
 .nav-container {
-    background-color: red;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
     width: 980px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 47px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #050505;
+   
+}
+
+.nav-button:hover {
+    color: #FFFFFF;
+    background-color: #FFC740;
+}
+
+/* for demonstration */
+#home-button {
+    color: #FFFFFF;
+    background-color: #FFC740;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    /* background-color: #8328; */
+}
+
+.slider-container {
+    width: 980px;
+    height: 340px;
+    background-image: url("../img/slider.jpeg");
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    filter: brightness(60%); 
+    z-index: 3;
+}
+.slider-background {
+    
+}
+.slider-title {
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px; 
+color: #FFC740;
+z-index: 0;
 }
