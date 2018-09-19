@@ -1,15 +1,23 @@
+.header-line {
+    display: block;
+    width: 100%;
+    border: 2px solid #9B51E0;
+}
+
+.a-non-decor {
+    text-decoration: none;
+}
 
 header {
     display: flex;
     justify-content: center;
     height: 94px;
-    /* background-color: green; */
+
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     width: 980px;
-    /* background-color: yellow; */
 }
 .logo {
     display: flex;
@@ -94,6 +102,10 @@ nav {
     color: #050505;
    
 }
+.a-nav {
+    text-decoration: none;
+}
+
 .nav-button:hover {
     color: #FFFFFF;
     background-color: #FFC740;
@@ -107,7 +119,7 @@ nav {
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .slider-container {
@@ -175,6 +187,9 @@ nav {
     font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+.a-slider-button {
+    text-decoration: none;
 }
 .main-wrap {
     display: flex;
@@ -374,4 +389,79 @@ article {
     color: #000000;
     margin-top: -1px;
     
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+ 
+    height: 160px;
+    
+}
+
+.aside-container {
+    display: block;
+
+    width: 980px;
+ 
+}
+.logos-wrap {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.logos {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    margin: 5px;
+}
+    .logo1 {
+        width: 95px;
+        height: 98px; 
+    }
+    .logo2 {
+        margin-top: 14px;
+        width: 98px;
+        height: 98px;
+    }
+    .logo3 {
+        margin-top: 23px;
+        width: 209px;
+        height: 79px;
+    }
+    .logo4 {
+        margin-top: 12px;
+        width: 162px;
+        height: 88px;
+    }
+    .logo5 {
+        margin-top: 15px;
+        width: 140px;
+        height: 72px;
+    }
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 115px;
+    background-color: #6D3D99;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+}
+.p-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.p-footer a {
+    color: #FFFFFF;
 }
