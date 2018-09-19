@@ -187,16 +187,191 @@ nav {
     justify-content: space-between;
     width: 980px;
     height: 173px;
-    /* background-color:green; */
+
 }
 
 
 article {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin-left: 10px;
     margin-right: 10px;
     width: 476px;
     height: 171px;
-    background-color: red;
+    /* background-color: blue; */
+} 
+.article-bottom {
+    width: 476px;
+    }
+
+.article-line 
+{
+    display: block;
+    width: 100%;
+    height: 16px
+}
+    .violet {
+        background-color: #9B51E0;
+    }
+    .yellow {
+        background-color: #FFC740;
+    }
+.article-title {
+    display: inline;
+    margin-left: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.article-wrap {
+    display: flex;
+    justify-content: space-between;
+    height:141px;
+    width: 476px;
+    padding-top: 14px;
+}
+.article-wrap-bottom {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 14px;
+}
+
+.article-img {
+    display: block;
+    position: absolute;
+    float: left;
+    width: 141px;
+    height: 141px;
+
+    
+   }
+   .first-article-img {
+       
+        background-image: url("../img/dog.jpg");
+        background-size:165px 148px;
+        background-position-y: -4px;
+        background-position-x: 15%;
+   }
+   .second-article-img  {
+        background-image: url("../img/steve.jpg");
+        background-position-x: 34%;
+        background-size: 265px 145px;
+   }
+   .third-article-img {
+        background-image: url("../img/animal.jpg"); 
+        background-size:175px 175px;
+        background-position-y: 20%;
+        background-position-x: 50%;
+   }
+   .fours-article-img {
+        background-image: url("../img/girl.jpg");
+        background-size:210px 215px;
+        background-position-x: 18%;
+        background-position-y: -4px;
+        
+   }
+
+.article-text { 
+    height: 105px;
+   
+    padding-left: 160px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: justify;
+    color: #000000;
+}
+    .bottom-block-text {
+        height: 105px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        text-align: justify;
+        color: #000000;
+    }
+
+.article-label {
+    display: block;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000
+}
+
+.resent-post-img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+    .first-resent-img {
+        background-image: url("../img/car.jpg");
+        background-size: 90px 50px;
+        background-position-y: -4px;
+        background-position-x: 32%;
+    } 
+    .second-resent-img {
+        background-image: url("../img/iphone.jpg");
+        background-size: 83px 44px;
+        background-position-y: -2px;
+        background-position-x: center;
+    }
+    .third-resent-img {
+        background-image: url("../img/news.png");
+        background-size: 82px 52px;
+        background-position-y: -4px;
+        background-position-x: 50%;
+    }
+.resent-post {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.resent-post-text {
+    padding-left: 9px;
+    width: 251px;
+}
+.h2-resent {
+    display: block;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    color: #000000;
+    margin-top: -2px;
+    margin-bottom: 0;
+   
+}
+.p-resent {
+    display: block ;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: justify;
+    color: #000000;
+    margin-top: -1px;
+    
 }
