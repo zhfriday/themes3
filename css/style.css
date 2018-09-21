@@ -1,7 +1,8 @@
 .header-line {
     display: block;
     width: 100%;
-    border: 2px solid #9B51E0;
+    height: 2px;
+    background-color: #9B51E0;
 }
 
 .a-non-decor {
@@ -58,30 +59,31 @@ header {
 .search {
     display: flex;
     margin-top: 40px;
+    height: 31px;
+    border: 1px solid #6D3D99;
 }
 
 .search-input {
     display: block;
     width: 201px;
-    height: 33px;
-    outline: none;
-    border: 1px solid #6D3D99;
+    height: 100%;
+    outline-style: none;
     padding: 0 10px 0 10px;
+}
+
+.search-input:active, .search-input:focus {
+    outline: none;
 }
 
 .search-button {
     display: flex;
     align-items: center;
-    height: 31px;
-    padding-left: 10px;
-    padding-right: 10px;
-    /* padding-bottom: 1px; */
+    width: 40px;
+    height: 100%;
+    justify-content: center;
     background-color: #9B51E0;
-    border: 1px solid #6D3D99;
     font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
-    line-height: normal;
     font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -93,18 +95,18 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    height: 64px;
+    display: block;
+    width: 100%;
+    height: 100%;
     margin-top: -10px;
-    /* background-color: blue; */
 }
 
 .nav-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    /* background-color: red; */
-    width: 980px;
+    width: 100%;
 }
 
 .nav-button {
@@ -147,7 +149,7 @@ nav {
 }
 
 .slider-container {
-    display: inline-block;
+    display: block;
     position: relative;
     width: 980px;
     height: 340px;
@@ -162,13 +164,13 @@ nav {
     background-size: cover;
     filter: brightness(60%);
     height: 332px;
-    width: 980px;
+    width: 100%;
     transition-duration: 1.7s;
 }
 
-.slider-img:hover {
+/* .slider-img:hover {
     filter: brightness(80%);
-}
+} */
 
 .slider-title {
     display: block;
@@ -203,13 +205,12 @@ nav {
     position: absolute;
     bottom: 32px;
     left: 44px;
-    width: 125px;
-    height: 25px;
+    width: 126px;
+    height: 26px;
     padding-top: 8px;
     margin: 0 auto;
     text-align: center;
     background-color: #6D3D99;
-    border: 1px solid #6D3D99;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -222,7 +223,6 @@ nav {
 
 .slider-button:hover {
     background-color: #FFC740;
-    border: 1px solid rgb(223, 156, 1);
 }
 
 .a-slider-button {
@@ -231,16 +231,18 @@ nav {
 
 .main-wrap {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 980px;
 }
 
 .main-container {
     display: flex;
     padding-top: 18px;
     padding-bottom: 18px;
-    justify-content: space-between;
-    width: 980px;
-    height: 173px;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 article {
@@ -249,7 +251,6 @@ article {
     margin-right: 10px;
     width: 476px;
     height: 171px;
-    /* background-color: blue; */
 }
 
 .article-bottom {
@@ -288,6 +289,7 @@ article {
 .article-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 141px;
     width: 476px;
     padding-top: 14px;
@@ -305,6 +307,7 @@ article {
     float: left;
     width: 141px;
     height: 141px;
+    border: 2px solid #FFC740;
     transition-duration: 0.6s;
 }
 
@@ -342,6 +345,7 @@ article {
 .article-text {
     height: 105px;
     padding-left: 160px;
+    margin-top: -35px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -420,7 +424,7 @@ article {
 
 .resent-post {
     display: flex;
-    width: 300px;
+    width: 100%;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 9px;
@@ -434,7 +438,7 @@ article {
 
 .resent-post-text {
     padding-left: 9px;
-    width: 251px;
+    width: 100%;
 }
 
 .h4-resent {
@@ -476,8 +480,10 @@ aside {
 
 .logos-wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .logos {
@@ -553,4 +559,218 @@ footer {
 
 .p-footer a {
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        margin-left: 3px;
+        width: 50px;
+    }
+    .logo-text {
+        height: 30px;
+        width: 50px;
+        padding-top: 2px;
+        margin-top: 38px;
+        margin-left: -42px;
+        line-height: 15px;
+        font-size: 1.2em;
+    }
+    .search-input {
+        width: 180px;
+    }
+    nav {
+        margin-top: 5px;
+    }
+    .slider-container {
+        width: 100%;
+        height: 380px;
+    }
+    .slider-img {
+        background-position-x: center;
+        height: 380px;
+        width: 100%;
+    }
+    .slider-title {
+        width: 250px;
+        left: 20px;
+        top: 12px;
+        line-height: 2.2rem;
+        font-size: 2.7rem;
+    }
+    .slider-p {
+        width: 90% !important;
+        top: 135px;
+        left: 20px;
+        width: 348px;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    .slider-button {
+        bottom: 40px;
+        left: 20px;
+    }
+    .main-wrap {
+        display: flex;
+        width: 100% !important;
+    }
+    .main-container {
+        display: flex;
+        height: 680px !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: -45px;
+    }
+    article {
+        padding-bottom: 10px;
+        width: 100% !important;
+        height: 261px;
+    }
+    article:last-child {
+        height: 251px;
+    }
+    .article-bottom {
+        width: 100% !important;
+        height: 210px;
+    }
+    .article-line {
+        margin-top: 10px;
+        width: 100% !important;
+    }
+    .article-title {
+        display: inline;
+        margin-left: 16px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        background-color: white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .article-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 14px;
+    }
+    .article-wrap-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .article-text {
+        display: block;
+        padding-left: 160px;
+        margin-top: 1px;
+        height: 285px !important;
+        width: 100% !important;
+    }
+    .bottom-block-text {
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+        color: #000000;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        height: 360px;
+    }
+    .logos-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 10px;
+    }
+    .logos {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 980px) {
+    .nav-container {
+        margin-top: 10px;
+    }
+    .main-wrap {
+        display: flex;
+        width: 100% !important;
+    }
+    .main-container {
+        display: flex;
+        height: 700px !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: -75px;
+    }
+    .main-container:first-child {
+        margin-top: -40px;
+    }
+    .main-wrap:last-child {
+        margin-bottom: -15px;
+    }
+    article {
+        padding-bottom: 0px;
+        height: 181px !important;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    article:last-child {
+        height: 172px;
+        margin-bottom: 78px;
+    }
+    .article-bottom {
+        width: 100% !important;
+        height: 171px;
+    }
+    .article-bottom:first-child {
+        margin-bottom: -75px;
+    }
+    .article-line {
+        margin-top: 10px;
+        width: 100% !important;
+    }
+    .article-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 14px;
+    }
+    .article-wrap-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .article-text {
+        display: block;
+        padding-left: 160px;
+        height: 100%;
+        width: 100% !important;
+        margin-top: 1px !important;
+    }
+    .bottom-block-text {
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+        color: #000000;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        margin-top: -80px
+    }
+    .logos-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 10px;
+        height: 130%;
+    }
+    .logos {
+        padding-right: 10px;
+    }
 }
